@@ -1,4 +1,4 @@
-The data used and available in the Getting_Cleaning_Data_Course_Project repository were gathered from 30 volunteers (ages 19-48) who performed a variety of activities while a smartphone was attached at the waist. The data were recorded by the phone (a Samsung Galaxy SII) during six different activities: walking, walking upstairs, walking downstairs, sitting, standing, and laying. The phone's accelerometer and gyroscope recorded a variety of 3-dimensional measurements of velocity, acceleration, and angle.
+The data used and available in the **Getting_Cleaning_Data_Course_Project** repository were gathered from 30 volunteers (ages 19-48) who performed a variety of activities while a smartphone was attached at the waist. The data were recorded by the phone (a Samsung Galaxy SII) during six different activities: walking, walking upstairs, walking downstairs, sitting, standing, and laying. The phone's accelerometer and gyroscope recorded a variety of 3-dimensional measurements of velocity, acceleration, and angle.
 
 The raw time-series data from the smartphone was pre-processed by applying noise filters to smooth the data. A vector of features were recorded from the time and frequency domains of the data, giving a 561-feature vector of time and frequency variables. Data is also included to identify each individual participant and what activity was performed. The entire set of data gives 10299 observations of 561 variables. The goal of run_analysis.R is to create a function to clean and tidy this data and give a summary of certain variables for each activity each subject performed.
 
@@ -22,11 +22,11 @@ The folders test/ and train/ should contain the following items:
 
 
 
-<a name="Data"/>
-<h4>Data Used in run_analysis()</h4>
-==========================================
 
-The general naming convention of the columns for the full dataset described above in Documentation is as described below. Signals were obtained from the smartphone sensory information and vectors were created for the following variables (where XYZ refers to separate signals in each X, Y, Z direction). The prefix "t" refers to measurements in the time domain, while the prefix "f" refers to measurements in the frequency domain. The data has been scaled by dividing measurements by the range of values; this means that the variables are technically unitless.
+<h4>Data Used in run_analysis()</h4>
+
+
+Signals were obtained from the smartphone sensory information and vectors were created for the following variables (where XYZ refers to separate signals in each X, Y, Z direction). The prefix "t" refers to measurements in the time domain, while the prefix "f" refers to measurements in the frequency domain. The data has been scaled by dividing measurements by the range of values; this means that the variables are technically unitless.
 
 - tBodyAcc-XYZ
 - tGravityAcc-XYZ
@@ -76,7 +76,7 @@ Additional vectors obtained by calculating the mean for certain signals:
 
 The data used in run_analysis() is only a subset of the entire dataset described above in order to examine only mean and standard deviation values. **This subset was determined by taking any variable that had "mean" or "std" in its name** (case insensitive). In order to be conservative and keep any relevant variables without cutting any that may be relevant, the net was cast wide.
 
-The following are the variables that were kept and used to make the tidy dataset (procedure as described in the README file). In addition, the first two variables (columns) indicate for each observation (row) what the subject ID and activity are for each mean of the measurement. The descriptions of all remaining variables (columns 3 to 81) are as above.
+The following are the variables that were kept and used to make the tidy dataset (procedure as described in the README file). In addition, the first two variables (columns) indicate for each observation (row) what the subject ID (from 1 to 30) and activity (walking, standing, sitting, etc.) are for each mean of the measurement. The descriptions of all remaining variables (columns 3 to 81) are as above.
 
 - subject\_id
 - activity\_name
