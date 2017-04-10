@@ -5,16 +5,33 @@ The raw time-series data from the smartphone was pre-processed by applying noise
 The data files are listed here with a brief explanation of what they are. In the primary working folder directory, the following items are necessary, with the test and train subdirectories:
 
 activity_labels.txt: This file gives the dictionary code for which the activities (walking, standing, sitting, etc.) performed by the subjects are labeled in the data files.
+
+
 features.txt: Included in this file are the column names for the X_*.txt files with the real numerical information gathered by the smartphone device
+
+
 features_info.txt: This file gives an explanation of the column naming convention given in the column names of features.txt
+
+
 run_analysis.R: The R function run_analysis() to analyze the data is defined in this .R file
+
+
 test/: This is a folder containing the "test" data (from 30% of the participants)
+
+
 train/: This is a folder containing the "train" data (from the other 70% of the participants)
+
+
 The folders test/ and train/ should contain the following items:
 
+
+
 X_test.txt: Contains the rows of observations for a 561-feature vector with time and frequency domain variables, where the features are explained in features.txt and features_info.txt
+
 subject_test.txt: Gives a participant subject identifier number (1 to 30) for each row of observation form X_test.txt
+
 y_test.txt: Gives a participant activity ID number (1 to 6 for 6 different activities) as described in activity_labels.txt
+
 
 
 
