@@ -1,5 +1,4 @@
 # Load the packages
-library("dplyr")
 library("reshape2")
 library("plyr")
 
@@ -11,7 +10,7 @@ download.file(URL, destfile = dest_file, method = "curl")
 unzip(dest_file)
 
 # Setting working directory
-own_WD<-"C:/Users/Àäìèíèñòðàòîð/UCI HAR Dataset"
+own_WD<-"C:/Users/Ã€Ã¤Ã¬Ã¨Ã­Ã¨Ã±Ã²Ã°Ã Ã²Ã®Ã°/UCI HAR Dataset"
 
 setwd(own_WD)
 
