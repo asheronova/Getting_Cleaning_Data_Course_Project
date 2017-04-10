@@ -40,6 +40,7 @@ Data Used in run_analysis() script
 
 Signals were obtained from the smartphone sensory information and vectors were created for the following variables (where XYZ refers to separate signals in each X, Y, Z direction). The prefix "t" refers to measurements in the time domain, while the prefix "f" refers to measurements in the frequency domain. The data has been scaled by dividing measurements by the range of values; this means that the variables are technically unitless.
 
+
 tBodyAcc-XYZ
 tGravityAcc-XYZ
 tBodyAccJerk-XYZ
@@ -57,7 +58,9 @@ fBodyAccMag
 fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
+
 Further transformations computations were completed to obtain the following set of variables from these signals (descriptions taken from the features.txt file from the UCI database):
+
 
 mean(): Mean value
 std(): Standard deviation
@@ -77,6 +80,7 @@ kurtosis(): kurtosis of the frequency domain signal
 bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
 angle(): Angle between to vectors.
 Additional vectors obtained by calculating the mean for certain signals:
+
 
 gravityMean
 tBodyAccMean
