@@ -14,6 +14,5 @@ The R script, `run_analysis.R`, does the following:
    variable for each subject and activity pair, using ddply function from "plyr"
 8. Writes the result into `tidy_data.txt` file
 
-
-
+You can run the script "run_analysis.R" by typing on console **source("run_analysis.R")** after setting your working directory, using **setwd()** function and saving the script to the same directory.
 
